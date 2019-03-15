@@ -1,4 +1,8 @@
 language: python
+
+git:
+	quiet: true
+
 python:
         - "2.7"
 
