@@ -1,6 +1,7 @@
 import pytest
-from principal import soma,subtrair,mult
-
+from principal import somar
+from principal import subtrair
+from principal import mult
 
 def test_somar():
     assert somar(2,4) == 6

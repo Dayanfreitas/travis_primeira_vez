@@ -10,7 +10,8 @@ def sub(x,y):
 def mult(x,y):
     return(x*y)
 
-print(soma(2,3))
-print(sub(2,3))
-print(mult(2,3))
+print("Somar: {}".format(somar(2,3)))
+print("Subtrair: {}".format(sub(2,3)))
+print("Multiplicar: {}".format(mult(2,3)))
+      
 
