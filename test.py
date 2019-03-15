@@ -1,6 +1,6 @@
 import pytest
 from principal import somar
-from principal import subtrair
+from principal import sub
 from principal import mult
 
 def test_somar():
