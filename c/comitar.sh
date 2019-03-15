@@ -13,16 +13,21 @@ diretorioAtual()
 }
 pause()
 {
-	sleep 0.5
+	sleep $1
 }
-
+commitar()
+{
+	git add .
+	git commit -m $1
+	git push
+}
 espaco
 diretorioAtual
-pause
+pause 0.5
 espaco
 
 echo "Voltadando um diretório..."
-pause
+pause 0.8
 cd ..
 
 espaco
@@ -31,4 +36,18 @@ espaco
 
 echo "Listar todos os arquivos modificados:"
 echo `git status`
+espaco
+
+echo "Deseja REALMENTE adicionar todos os arquivo?[S]im[N]ao"
+read operacao
+echo $operacao
+if [ "$operacao" = "s" ]
+then 
+	espaco
+	echo "Qual a mensagem de commit?"
+	read msg
+	commitar $msg
+fi
+		 
+
 
