@@ -1,7 +1,7 @@
 language: python
 
 git:
-	quiet: true
+   quiet: true
 
 python:
         - "2.7"
